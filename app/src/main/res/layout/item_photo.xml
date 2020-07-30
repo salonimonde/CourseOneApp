@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.bynry.courseoneapp.Utils.SquareImage
+        android:id="@+id/item_photo_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/transparent_color">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_photo_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_photo_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="TBVSon"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</FrameLayout>
